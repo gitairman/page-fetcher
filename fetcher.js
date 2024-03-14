@@ -29,7 +29,7 @@ const writeToFile = (data) => {
 
 const handleFileOverwrite = (data) => {
   rl.question(
-    `The file ${file} already exists, would you like to overwrite it? Press Y for Yes and N for No. `,
+    `\nThe file ${file} already exists, would you like to overwrite it? Press Y for Yes and N for No. `,
     (answer) => {
       let overwrite = answer === 'Y' || answer === 'y';
       let notOverwrite = answer === 'N' || answer === 'n';
